@@ -108,7 +108,7 @@ const claude2 = new AnthropicCompletion("claude-2", { temperature: 1 });
 runner.register("Claude2 completion", claude2, tests);
 
 // Register another suite of tests that test the OpenAI Davinci model
-const davinci3 = new OpenAICompletion("text-davinci-003");
+const davinci3 = new OpenAICompletion("gpt-3.5-turbo-instruct");
 runner.register("text-davinci-003 completion", davinci3, tests);
 
 // Run the tests

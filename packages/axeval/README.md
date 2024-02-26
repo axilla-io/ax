@@ -109,7 +109,7 @@ runner.register("Claude2 completion", claude2, tests);
 
 // Register another suite of tests that test the OpenAI Davinci model
 const davinci3 = new OpenAICompletion("gpt-3.5-turbo-instruct");
-runner.register("text-davinci-003 completion", davinci3, tests);
+runner.register("gpt-3.5-turbo-instruct completion", davinci3, tests);
 
 // Run the tests
 runner.run();
